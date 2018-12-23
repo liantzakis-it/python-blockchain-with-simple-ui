@@ -81,7 +81,7 @@ class Blockchain:
                 peer_nodes = json.loads(file_content[2])
                 self.__peer_nodes = set(peer_nodes)
         except (IOError, IndexError):
-            print("Error loading blockchain")
+            pass
         finally:
             print('Finished the load_data function.')
 
